@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CreateComponent } from './create-employee/create-employee.component';
+import { CreateComponent } from './Components/create/create.component';
 
 const routes: Routes = [
   { path: '', component:CreateComponent },

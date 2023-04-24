@@ -2,9 +2,19 @@
     line-height:3;
     margin-left: 2%;
 }
+.container {
+    margin-top: 15px;
+    width: 800px;
+    height: 800px;
+    background-color: rgb(213, 228, 232);
+    color: #000;
+    border-radius: 12px;
+    box-shadow: 12px 12px 38px 0px rgba(0,0,0,0.3);
+  }
+
 
 button {
-    background-color: #40a1e7;
+    background-color: #82aecd;
     border: none;
     color: white;
     padding: 12px 24px;

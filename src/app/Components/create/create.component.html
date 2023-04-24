@@ -15,53 +15,54 @@
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputFirstName">First Name</label>
-        <input type="name" class="form-control" id="inputFirstName" placeholder="Enter First Name">
+        <input type="name" class="form-control" id="inputFirstName" placeholder="Enter First Name" name="fname" required>
+        
       </div>
       <div class="form-group col-md-6">
         <label for="inputLastName">Last Name</label>
-        <input type="name" class="form-control" id="inputLastName" placeholder="Enter Last Name">
+        <input type="name" class="form-control" id="inputLastName" placeholder="Enter Last Name" name="lname" required>
       </div>
     </div>
     <div class="form-group col-md-12">
       <label for="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
     </div>
     <div class="form-group col-md-12">
-      <label for="inputDepartment">Department</label>
-      <input type="text" class="form-control" id="inputDepartment" placeholder="Enter Department">
+      <label for="department">Department</label>
+      <input type="text" class="form-control" id="department" placeholder="Enter Department" name="department" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputCellphone">Cellphone Number</label>
-      <input type="phone" class="form-control" id="inputCellphone" placeholder="Enter Cellphone Number">
+      <label for="cellphone">Cellphone Number</label>
+      <input type="phone" class="form-control" id="cellphone" placeholder="Enter Cellphone Number" name="cellphone" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputSalary">Salary</label>
-      <input type="number" class="form-control" id="inputSalary" placeholder="Enter Salary">
+      <label for="salary">Salary</label>
+      <input type="number" class="form-control" id="salary" placeholder="Enter Salary">
     </div>
     <div class="form-group col-md-12">
-      <label for="inputAddress">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" placeholder="1234 Main St" name="address" required>
     </div>
     <div class="form-group col-md-12">
-      <label for="inputAddress2">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Suburb">
+      <label for="suburb">Address 2</label>
+      <input type="text" class="form-control" id="suburb" placeholder="Suburb" name ="suburb" required>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" name="city" required>
       </div>
       <div class="form-group col-md-6">
-        <label for="inputCountry">Country</label>
-        <input type="text" class="form-control" id="inputCountry">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" id="country" name="country" required>
       </div>
       <div class="form-group col-md-3">
-        <label for="inputPostalCode">Postal Code</label>
-        <input type="text" class="form-control" id="inputPostalCode">
+        <label for="postalCode">Postal Code</label>
+        <input type="text" class="form-control" id="postalCode" name="postalCode" required>
       </div>
       <div class="form-group col-md-9">
-        <label for="inputStartDate">Start Date</label>
-        <input type="date" class="form-control" id="inputStartDate" placeholder="Enter Start Date">
+        <label for="startDate">Start Date</label>
+        <input type="date" class="form-control" id="startDate" placeholder="Enter Start Date" required>
       </div>
     </div>
     <div class="row">
@@ -69,7 +70,7 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
   <div class="button">
-    <button type="submit" class="btn btn-primary">Clear All</button>
+    <button (click)="clearInput()" class="btn btn-primary">Clear Input</button>
   </div>
 </div>
   </form>

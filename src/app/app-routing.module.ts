@@ -7,8 +7,7 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { EmployeeComponent } from './Components/employee/employee.component';
-
-
+import { ViewComponent } from './Components/view/view.component';
 
 const routes: Routes = [
   { path: 'create', component:CreateComponent },
@@ -18,6 +17,7 @@ const routes: Routes = [
   { path: 'footer', component: FooterComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'employee', component: EmployeeComponent },
+  { path: 'view', component: ViewComponent },
 ];
 
 @NgModule({

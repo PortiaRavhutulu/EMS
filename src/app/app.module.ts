@@ -11,18 +11,13 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
+import { ArchivesComponent } from './Components/archives/archives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateComponent,
-    UpdateComponent,
-    EmployeeComponent,
-    ViewComponent,
-    DashboardComponent,
-    FooterComponent,
-    HeaderComponent,
-    SidebarComponent
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

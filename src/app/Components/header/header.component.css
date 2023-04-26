@@ -1,11 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    width: device-width;
-}
-      
 .head{
     color: black;
     font-weight: bold;
@@ -26,8 +19,4 @@
  .image {
    margin: 0;
    float: inline-start;
-}
-
-h6{
-    
 }

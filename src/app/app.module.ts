@@ -12,12 +12,20 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { ArchivesComponent } from './Components/archives/archives.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateComponent,
-    UpdateComponent
+    UpdateComponent,
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent,
+    DashboardComponent,
+    EmployeeComponent,
+    ViewComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

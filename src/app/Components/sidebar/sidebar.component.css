@@ -1,0 +1,14 @@
+.sidebar{
+    float: left;
+    width: 15%;
+    background-color: rgb(217, 255, 249);
+    padding: 15px 15px;
+    height: 100vh;
+}
+
+.items{
+    margin-top: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}

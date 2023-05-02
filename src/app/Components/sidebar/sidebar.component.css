@@ -12,3 +12,13 @@
     font-weight: bold;
     padding: 8px;
 }
+a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #2dbeb9;
+    background-color: transparent;
+    text-decoration: none;
+  }

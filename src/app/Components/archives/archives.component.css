@@ -42,3 +42,10 @@ img{
     float: right;
 
 }
+
+table.dataTable td > i {
+    margin-left: 0.5em;
+    opacity: 0.3;
+    float: right;
+    cursor: pointer;
+}

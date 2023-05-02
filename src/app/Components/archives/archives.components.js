@@ -1,17 +1,6 @@
-$(document).ready(function() {
-    $('#mytable').DataTable( {
-        dom: 'Bfrtip',
-        columnDefs: [
-            {
-                targets: 1,
-                className: 'noVis'
-            }
-        ],
-        buttons: [
-            {
-                extend: 'colvis',
-                columns: ':not(.noVis)'
-            }
-        ]
-    } );
+$('#myTable').dataTable( {
+    ajax:           '/api/data',
+    scrollY:        200,
+    deferRender:    true,
+    scroller:       true
 } );

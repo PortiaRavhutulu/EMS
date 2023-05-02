@@ -2,21 +2,14 @@
 .head{
     color: black;
     font-weight: bold;
-    width: 100%;
+    /* width: 100%; */
+    margin: 0;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     justify-content: space-around;
     background-color: #2dbeb9;
     padding:15px;
 }
-.app{
-    text-align: center;
-}
-.logo{
-    float: right;
-}
 
- .image {
-   margin: 0;
-   float: inline-start;
-}
+
+ 

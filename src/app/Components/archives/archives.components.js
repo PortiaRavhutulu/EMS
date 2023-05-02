@@ -1,5 +1,6 @@
 document.querySelector('#tableID');
 
+ table.querySelectorAll('tbody td') 
 element.addEventListener('click', handler);
 
 const table = document.querySelector('#tableID');

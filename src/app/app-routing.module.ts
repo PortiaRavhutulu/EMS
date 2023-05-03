@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'employee', component: EmployeeComponent },
   { path: 'view', component: ViewComponent },
   { path: 'archives', component: ArchivesComponent },
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
 ];
 
 @NgModule({

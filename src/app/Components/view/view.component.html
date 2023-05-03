@@ -1,64 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="view.component.css">
-    <title>Document</title>
-</head>
-<body>
-    <br>
-    <br>
-    <br>
-
-    <article class="card card--wide">
-        <div class="card__media">
-          <img src="icon.jpg" alt="Card image" />
-          <!-- <div class="card__date"> -->
-            <!-- <span class="date--day">27</span> -->
-            <!-- <span class="date--month">Mar</span> -->
-          <!-- </div> -->
-          <!-- <span class="card__category">Photos</span> -->
-        </div>
-       
-        <div class="card__content">
-            <header class="card__header">
-                <h2 class="card__title">TLOTLO SELEKE</h2>
-                <div class="card__subtitle">Information Technology</div>
-            </header>
-            <p class="card__excerpt">building communications networks for a company, 
-                                    safeguarding data and information, creating and 
-                                    administering databases, helping employees troubleshoot 
-                                    problems with their computers or mobile devices, 
-                                    or doing a range of other work to ensure the 
-                                    efficiency and security of business information 
-            </p>
-       
-            
-          <footer class="card__meta" role="contentinfo">
-
-            <p class="card_s">Address : 
-                <span class="card_ss">486 Unit 2 Cul 16</span>
-                <span class="card_ss">  Mmabatho</span>
-                <span class="card_ss">2735</span>
-            </p>
-            <p class="card_s">Email: 
-                <span class="card_ss"> seleketk21@gmail.com</span>
-            </p>
-            <p class="card_s">Cellphone         : 
-                <span class="card_ss">081 352 0632</span>
-            </p> 
-            <p class="card_s">Salary: 
-                <span class="card_ss">R10 000</span>
-            </p>
-          </footer>
-        </div>
-       </article>
-
-
-    
-
-
-</body>
-</html>
+<h3> View Employee Details</h3>
+<div>
+    <div>
+        <label> <b> First Name: </b></label> {{employee.firstName}}
+    </div>
+    <div>
+        <label> <b> Last Name: </b></label> {{employee.lastName}}
+    </div>
+    <div>
+        <label> <b> Email: </b></label> {{employee.emailId}}
+    </div>
+</div>

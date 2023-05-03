@@ -10,31 +10,34 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./update.component.css']
 })
 export class UpdateComponent implements OnInit {
-
-  id!: number;
-  employee: EmployeeModel = new EmployeeModel();
-  constructor(private employeesService: EmployeesService,
-    private route: ActivatedRoute,
-    private router: Router) { }
-
   ngOnInit(): void {
-    this.id = this.route.snapshot.params['id'];
-
-    this.employeesService.getEmployeeById(this.id).subscribe(data => {
-      this.employee = data;
-    }, error => console.log(error));
+    throw new Error('Method not implemented.');
   }
 
-  onSubmit(){
-    this.employeesService.updateEmployee(this.id, this.employee).subscribe( data =>{
-      this.goToEmployee();
-    }
-    , error => console.log(error));
-  }
+  // id!: number;
+  // employee: EmployeeModel = new EmployeeModel();
+  // constructor(private employeesService: EmployeesService,
+  //   private route: ActivatedRoute,
+  //   private router: Router) { }
 
-  goToEmployee(){
-    this.router.navigate(['/employee']);
-  }
+  // ngOnInit(): void {
+  //   this.id = this.route.snapshot.params['id'];
+
+  //   this.employeesService.getEmployeeById(this.id).subscribe(data => {
+  //     this.employee = data;
+  //   }, error => console.log(error));
+  // }
+
+  // onSubmit(){
+  //   this.employeesService.updateEmployee(this.id, this.employee).subscribe( data =>{
+  //     this.goToEmployee();
+  //   }
+  //   , error => console.log(error));
+  // }
+
+  // goToEmployee(){
+  //   this.router.navigate(['/employee']);
+  // }
 
   userForm!: FormGroup;
   // constructor(private formBuilder: FormBuilder) {

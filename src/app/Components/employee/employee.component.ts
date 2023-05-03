@@ -7,39 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './employee.component.html',
   styleUrls: ['./employee.component.css']
 })
-export class EmployeeComponent implements OnInit{
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-
-  // employee: EmployeeModel[] = [];
-
-  // constructor(private employeesService: EmployeesService,
-  //   private router: Router) { }
-
-  // ngOnInit(): void {
-  //   this.getEmployees();
-  // }
-
-  // private getEmployees(){
-  //   this.employeesService.getEmployees().subscribe(data => {
-  //     this.employee = data;
-  //   });
-  // }
-
-  // employeeDetails(id: number){
-  //   this.router.navigate(['employee', id]);
-  // }
-
-  // updateEmployee(id: number){
-  //   this.router.navigate(['update', id]);
-  // }
-
-  // deleteEmployee(id: number){
-  //   this.employeesService.deleteEmployee(id).subscribe( data => {
-  //     console.log(data);
-  //     this.getEmployees();
-  //   })
-  // }
+export class EmployeeComponent {
 
 }
+

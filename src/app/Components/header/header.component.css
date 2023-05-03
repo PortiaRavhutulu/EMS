@@ -1,14 +1,30 @@
 
+
 .head{
     color: black;
     font-weight: bold;
-    /* width: 100%; */
+    width: 100%;
     margin: 0;
     display: flex;
-    /* text-align: center; */
+    text-align: center;
     justify-content: space-around;
     background-color: #2dbeb9;
     padding:15px;
+}
+
+.heading{
+    font-size: 30px;
+    /* font-family: 'Courier New', monospace; */
+}
+
+.logo{
+    position: absolute;
+    right: 0;
+}
+
+.admin{
+    position: absolute;
+    left: 0;
 }
 
 

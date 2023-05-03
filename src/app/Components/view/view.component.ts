@@ -9,17 +9,20 @@ import { EmployeesService } from 'src/app/employees.service';
   styleUrls: ['./view.component.css']
 })
 export class ViewComponent implements OnInit {
-  id!: number;
-  employee!: EmployeeModel;
-  constructor(private route: ActivatedRoute, private employeesService: EmployeesService) { }
-
   ngOnInit(): void {
-    this.id = this.route.snapshot.params['id'];
-
-    this.employee = new EmployeeModel();
-    this.employeesService.getEmployeeById(this.id).subscribe( data => {
-      this.employee = data;
-    });
+    throw new Error('Method not implemented.');
   }
+  // id!: number;
+  // employee!: EmployeeModel;
+  // constructor(private route: ActivatedRoute, private employeesService: EmployeesService) { }
+
+  // ngOnInit(): void {
+  //   this.id = this.route.snapshot.params['id'];
+
+  //   this.employee = new EmployeeModel();
+  //   this.employeesService.getEmployeeById(this.id).subscribe( data => {
+  //     this.employee = data;
+  //   });
+  // }
 
 }

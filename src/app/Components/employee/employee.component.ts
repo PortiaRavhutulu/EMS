@@ -8,9 +8,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit{
+  // Constructor injection
+  constructor(private service: EmployeesService) {
+    }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // Calling method
+    this.showEmployees();
   }
+
+  // Method to show all employees and call the service
+  showEmployees(){
+    this.service.getEmployees().subscribe(result => {
+      console.log(result)});
+  }
+
+
 
   // employee: EmployeeModel[] = [];
 
@@ -19,7 +31,7 @@ export class EmployeeComponent implements OnInit{
 
   // ngOnInit(): void {
   //   this.getEmployees();
-  // }
+  }
 
   // private getEmployees(){
   //   this.employeesService.getEmployees().subscribe(data => {
@@ -42,6 +54,6 @@ export class EmployeeComponent implements OnInit{
   //   })
   // }
 
-}
+
 
 

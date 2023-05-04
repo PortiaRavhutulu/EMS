@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmployeeModel } from 'src/app/employeeModel';
 import { EmployeesService } from 'src/app/employees.service';
 import { Router } from '@angular/router';
+import { FormControl } from '@angular/forms';
+
 
 @Component({
   selector: 'app-create',
@@ -10,35 +12,47 @@ import { Router } from '@angular/router';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent implements OnInit{
+  CreateComponent = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    email: new FormControl(''),
+    department: new FormControl(''),
+    cellphone: new FormControl(''),
+    salary: new FormControl(''),
+    address: new FormControl(''),
+    address2: new FormControl(''),
+    city: new FormControl(''),
+    country: new FormControl(''),
+    postalCode: new FormControl(''),
+    startDate: new FormControl(''),
+  });
+
+
+employee: EmployeeModel = new EmployeeModel();
+  constructor(private employeesService: EmployeesService,
+    private router: Router) { }
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+   }
+
+  saveEmployee(){
+    this.employeesService.createEmployee(this.CreateComponent.value).subscribe( data =>{
+      console.log(data);
+      this.goToEmployee();
+    },
+    error => console.log(error));
   }
 
-// employee: EmployeeModel = new EmployeeModel();
-//   constructor(private employeesService: EmployeesService,
-//     private router: Router) { }
-
-//   ngOnInit(): void {
-//   }
-
-//   saveEmployee(){
-//     this.employeesService.createEmployee(this.employee).subscribe( data =>{
-//       console.log(data);
-//       this.goToEmployee();
-//     },
-//     error => console.log(error));
-//   }
-
-//   goToEmployee(){
-//     this.router.navigate(['/employee']);
-//   }
+  goToEmployee(){
+    this.router.navigate(['/employee']);
+  }
   
-//   onSubmit(){
-//     console.log(this.employee);
-//     this.saveEmployee();
-//   }
+  onSubmit(){
+    console.log(this.employee);
+    this.saveEmployee();
+  }
 
-  userForm!: FormGroup;
+  // userForm!: FormGroup;
   // constructor(private formBuilder: FormBuilder) {
   //   // Create the form group
   //   this.userForm = this.formBuilder.group({
@@ -60,21 +74,21 @@ export class CreateComponent implements OnInit{
 
   // ngOnInit(): void { }
 
-  clearInput() {
-    // Clear the input field
-    this.userForm.get('firstName')?.reset();
-    this.userForm.get('lastName')?.reset();
-    this.userForm.get('email')?.reset();
-    this.userForm.get('department')?.reset();
-    this.userForm.get('cellphone')?.reset();
-    this.userForm.get('salary')?.reset();
-    this.userForm.get('address')?.reset();
-    this.userForm.get('suburb')?.reset();
-    this.userForm.get('city')?.reset();
-    this.userForm.get('country')?.reset();
-    this.userForm.get('postalCode')?.reset();
-    this.userForm.get('startDate')?.reset();
-    console.log("cleared!")
+  // clearInput() {
+  //   // Clear the input field
+  //   this.userForm.get('firstName')?.reset();
+  //   this.userForm.get('lastName')?.reset();
+  //   this.userForm.get('email')?.reset();
+  //   this.userForm.get('department')?.reset();
+  //   this.userForm.get('cellphone')?.reset();
+  //   this.userForm.get('salary')?.reset();
+  //   this.userForm.get('address')?.reset();
+  //   this.userForm.get('suburb')?.reset();
+  //   this.userForm.get('city')?.reset();
+  //   this.userForm.get('country')?.reset();
+  //   this.userForm.get('postalCode')?.reset();
+  //   this.userForm.get('startDate')?.reset();
+  //   console.log("cleared!")
   }
 
-}
+

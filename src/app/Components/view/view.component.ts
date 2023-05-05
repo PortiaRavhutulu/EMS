@@ -9,6 +9,7 @@ import { EmployeesService } from 'src/app/employees.service';
   styleUrls: ['./view.component.css']
 })
 export class ViewComponent implements OnInit {
+details: any;
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }

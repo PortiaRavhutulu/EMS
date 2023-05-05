@@ -8,18 +8,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit{
+  details: any;
   // Constructor injection
   constructor(private service: EmployeesService) {
     }
-  ngOnInit(): void {
+  ngOnInit(): any {
     // Calling method
     this.showEmployees();
   }
 
   // Method to show all employees and call the service
   showEmployees(){
-    this.service.getEmployees().subscribe(result => {
-      console.log(result)});
+     return this.service.getEmployees().subscribe(result => {
+      this.details = result;
+      console.log(this.details)});
   }
 
 

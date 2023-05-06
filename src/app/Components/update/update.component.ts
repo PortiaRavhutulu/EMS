@@ -15,7 +15,7 @@ export class UpdateComponent implements OnInit {
   }
 
   // id!: number;
-  // employee: EmployeeModel = new EmployeeModel();
+  // employee: EmployeeModel = new EmployeeModel();1
   // constructor(private employeesService: EmployeesService,
   //   private route: ActivatedRoute,
   //   private router: Router) { }

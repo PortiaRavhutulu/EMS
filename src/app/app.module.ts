@@ -14,7 +14,8 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { ArchivesComponent } from './Components/archives/archives.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EmpAddComponent } from './Component/emp-add/emp-add.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     CreateComponent,
     UpdateComponent,
+    ArchivesComponent,
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
@@ -29,12 +31,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     EmployeeComponent,
     ViewComponent,
     HomeComponent,
+    EmpAddComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-   ReactiveFormsModule 
+   ReactiveFormsModule,
+   FormsModule
 
   ],
   providers: [],

@@ -24,37 +24,14 @@ export class EmployeeComponent implements OnInit{
       console.log(this.details)});
   }
 
-
-
-  // employee: EmployeeModel[] = [];
-
-  // constructor(private employeesService: EmployeesService,
-  //   private router: Router) { }
-
-  // ngOnInit(): void {
-  //   this.getEmployees();
+  setId(id: any){
+    localStorage.setItem('id', id);
   }
 
-  // private getEmployees(){
-  //   this.employeesService.getEmployees().subscribe(data => {
-  //     this.employee = data;
-  //   });
-  // }
 
-  // employeeDetails(id: number){
-  //   this.router.navigate(['employee', id]);
-  // }
 
-  // updateEmployee(id: number){
-  //   this.router.navigate(['update', id]);
-  // }
-
-  // deleteEmployee(id: number){
-  //   this.employeesService.deleteEmployee(id).subscribe( data => {
-  //     console.log(data);
-  //     this.getEmployees();
-  //   })
-  // }
+  
+  }
 
 
 

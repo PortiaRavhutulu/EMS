@@ -1,24 +1,14 @@
-<html lang="en">
-<head>
-  <title>Creating a New Employee</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
 <div class="container mb-5">
   <h2>Add a New Employee:</h2>
 
   <form [formGroup]="CreateComponent"  (ngSubmit)="onSubmit()">
-  
-    
+
+
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputFirstName">First Name</label>
         <input type="name" class="form-control" id="inputFirstName" placeholder="Enter First Name"  formControlName="firstName" required>
-        
+
       </div>
       <div class="form-group col-md-6">
         <label for="inputLastName">Last Name</label>
@@ -41,7 +31,6 @@
         <option value="Engineering">Engineering</option>
       </select>
     </div>
-    
     <div class="form-group col-md-6">
       <label for="cellphone">Cellphone Number</label>
       <input type="phone" class="form-control" id="cellphone" placeholder="Enter Cellphone Number" formControlName="cellphone" required>
@@ -76,7 +65,7 @@
         <input type="date" class="form-control" id="startDate" formControlName="startDate" placeholder="Enter Start Date"  required>
       </div>
     </div>
-   
+
    <div>
 
     <button class="btn btn-primary">Submit</button>
@@ -85,5 +74,151 @@
   </form>
 </div>
 
-</body>
-</html>
+
+<!-- <div class="container mb-5">
+  <h2>Add a New Employee:</h2>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputFirstName">First Name</label>
+        <input type="name" class="form-control" id="inputFirstName" placeholder="Enter First Name" name="fname" required>
+
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputLastName">Last Name</label>
+        <input type="name" class="form-control" id="inputLastName" placeholder="Enter Last Name" name="lname" required>
+      </div>
+    </div>
+    <div class="form-group col-md-12">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group col-md-12">
+      <label for="department">Department</label>
+      <select id="department" name="department" ngModel class="form-control">
+        <option value="1" color="light-gray">Choose Department</option>
+        <option value="2">IT</option>
+        <option value="3">HR</option>
+        <option value="4">Marketing</option>
+        <option value="5">Finance</option>
+        <option value="6">Sales</option>
+        <option value="7">Engineering</option>
+      </select>
+    </div>
+<div class="form-group col-md-6">
+      <label for="cellphone">Cellphone Number</label>
+      <input type="phone" class="form-control" id="cellphone" placeholder="Enter Cellphone Number" name="cellphone" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="salary">Salary</label>
+      <input type="number" class="form-control" id="salary" placeholder="Enter Salary">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" placeholder="1234 Main St" name="address" required>
+    </div>
+    <div class="form-group col-md-12">
+      <label for="suburb">Address 2</label>
+      <input type="text" class="form-control" id="suburb" placeholder="Suburb" name ="suburb" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" placeholder="City" name="city" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" id="country" placeholder="Country" name="country" required>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="postalCode">Postal Code</label>
+        <input type="text" class="form-control" id="postalCode" placeholder="Postal Code" name="postalCode" required>
+      </div>
+      <div class="form-group col-md-9">
+        <label for="startDate">Start Date</label>
+        <input type="date" class="form-control" id="startDate" placeholder="Enter Start Date" required>
+      </div>
+    </div>
+
+   <div>
+    <button type="submit" class="btn btn-primary">Submit</button> -->
+    <!-- <button (click)="clearInput()" class="btn btn-primary">Clear Input</button> -->
+  <!-- </div>
+  </form>
+</div> -->
+
+
+
+
+
+<!-- <div class="container mb-5">
+  <h2>Add a New Employee:</h2>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputFirstName">First Name</label>
+        <input type="name" class="form-control" id="inputFirstName" placeholder="Enter First Name" name="fname" required>
+
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputLastName">Last Name</label>
+        <input type="name" class="form-control" id="inputLastName" placeholder="Enter Last Name" name="lname" required>
+      </div>
+    </div>
+    <div class="form-group col-md-12">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group col-md-12">
+      <label for="department">Department</label>
+      <select id="department" name="department" ngModel class="form-control">
+        <option value="1" color="light-gray">Choose Department</option>
+        <option value="2">IT</option>
+        <option value="3">HR</option>
+        <option value="4">Marketing</option>
+        <option value="5">Finance</option>
+        <option value="6">Sales</option>
+        <option value="7">Engineering</option>
+      </select>
+    </div>
+<div class="form-group col-md-6">
+      <label for="cellphone">Cellphone Number</label>
+      <input type="phone" class="form-control" id="cellphone" placeholder="Enter Cellphone Number" name="cellphone" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="salary">Salary</label>
+      <input type="number" class="form-control" id="salary" placeholder="Enter Salary">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" placeholder="1234 Main St" name="address" required>
+    </div>
+    <div class="form-group col-md-12">
+      <label for="suburb">Address 2</label>
+      <input type="text" class="form-control" id="suburb" placeholder="Suburb" name ="suburb" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" placeholder="City" name="city" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" id="country" placeholder="Country" name="country" required>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="postalCode">Postal Code</label>
+        <input type="text" class="form-control" id="postalCode" placeholder="Postal Code" name="postalCode" required>
+      </div>
+      <div class="form-group col-md-9">
+        <label for="startDate">Start Date</label>
+        <input type="date" class="form-control" id="startDate" placeholder="Enter Start Date" required>
+      </div>
+    </div>
+
+   <div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  
+  </div>
+  </form>
+</div> -->

@@ -20,8 +20,8 @@ export class EmployeesService {
     return this.httpClient.post(`${this.baseURL}`, val);
   }
 
-  getEmployeeById(id: number): Observable<EmployeeModel>{
-    return this.httpClient.get<EmployeeModel>(`${this.baseURL}/${id}`);
+  getEmployeeById(id: any): Observable<any []>{
+    return this.httpClient.get<any>(`${this.baseURL}/${id}`);
   }
 
   updateEmployee(id: number, employee: EmployeeModel): Observable<Object>{

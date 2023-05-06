@@ -4,12 +4,13 @@
     color: black;
     font-weight: bold;
     width: 100%;
-    margin: 0;
+    margin-bottom: 50px;
     display: flex;
     text-align: center;
     justify-content: space-around;
     background-color: #2dbeb9;
     padding:15px;
+    position: fixed;
 }
 
 .heading{

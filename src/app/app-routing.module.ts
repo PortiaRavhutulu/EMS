@@ -11,6 +11,7 @@ import { ViewComponent } from './Components/view/view.component';
 import { ArchivesComponent } from './Components/archives/archives.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
+import { EmpAddComponent } from './Component/emp-add/emp-add.component';
 
 const routes: Routes = [
   { path: '', component:HomeComponent },

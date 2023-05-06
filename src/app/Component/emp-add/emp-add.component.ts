@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { EmployeeModel } from 'src/app/employeeModel';
 import { EmployeesService } from 'src/app/employees.service';
-import { Router } from '@angular/router';
-import { FormControl } from '@angular/forms';
-
 
 @Component({
-  selector: 'app-create',
-  templateUrl: './create.component.html',
-  styleUrls: ['./create.component.css']
+  selector: 'app-emp-add',
+  templateUrl: './emp-add.component.html',
+  styleUrls: ['./emp-add.component.css']
 })
-export class CreateComponent implements OnInit{
+export class EmpAddComponent implements OnInit {
   CreateComponent = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
@@ -47,8 +45,6 @@ employee: EmployeeModel = new EmployeeModel();
     console.log(this.employee);
     this.saveEmployee();
   }
+  
 
-
-  }
-
-
+}

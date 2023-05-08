@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 760a4efde0af25d59039f08723cb249b9b752cf9
 <div class="container mb-5">
-  <h2>Add a New Employee:</h2>
+  <div class="backimg"><a routerLink="/employee"><img src="https://cdn0.iconfinder.com/data/icons/controls-add-on/48/v-40-512.png" alt="back" width = 55; height="40"> </a> </div>
+  <h1>New Employee:</h1>
 
   <form [formGroup]="CreateComponent"  (ngSubmit)="onSubmit()">
 
@@ -24,7 +21,7 @@
       <label for="email">Email</label>
       <input type="email" class="form-control" id="email" placeholder="Enter email" formControlName="email" required>
     </div>
-    <div class="form-group col-md-12">
+    <div class="form-group col-md-6">
       <label for="department">Department</label>
       <select id="department" formControlName="department" ngModel class="form-control">
         <option value="1" color="light-gray">Choose Department</option>
@@ -34,6 +31,14 @@
         <option value="Finance">Finance</option>
         <option value="Sales">Sales</option>
         <option value="Engineering">Engineering</option>
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Gender">Gender</label>
+      <select id="department" formControlName="department" ngModel class="form-control">
+        <option value="1" color="light-gray">Choose Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
       </select>
     </div>
     <div class="form-group col-md-6">
@@ -48,38 +53,17 @@
       <label for="address">Address</label>
       <input type="text" class="form-control" id="address" placeholder="1234 Main St" formControlName="address" required>
     </div>
-    <div class="form-group col-md-12">
-      <label for="suburb">Address 2</label>
-      <input type="text" class="form-control" id="suburb" placeholder="Suburb" formControlName ="address2" required>
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="city">City</label>
-        <input type="text" class="form-control" id="city" placeholder="City" formControlName="city" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="country">Country</label>
-        <input type="text" class="form-control" id="country" placeholder="Country" formControlName="country" required>
-      </div>
-      <div class="form-group col-md-3">
-        <label for="postalCode">Postal Code</label>
-        <input type="text" class="form-control" id="postalCode" placeholder="Postal Code" formControlName="postalCode" required>
-      </div>
-      <div class="form-group col-md-9">
-        <label for="startDate">Start Date</label>
-        <input type="date" class="form-control" id="startDate" formControlName="startDate" placeholder="Enter Start Date"  required>
-      </div>
-    </div>
+
+  
 
    <div>
 
-    <button class="btn btn-primary">Submit</button>
+    <button class="btn btn-primary" >Submit</button>
     <!-- <button (click)="clearInput()" class="btn btn-primary">Clear Input</button> -->
   </div>
   </form>
 </div>
 
-<<<<<<< HEAD
 
 <!-- <div class="container mb-5">
   <h2>Add a New Employee:</h2>
@@ -228,5 +212,3 @@
   </div>
   </form>
 </div> -->
-=======
->>>>>>> 760a4efde0af25d59039f08723cb249b9b752cf9

@@ -3,15 +3,29 @@
     margin-left: 2%;
 }
 .container {
-    margin-top: 15px;
+    margin-top: 80px;
+    padding-top: 20px;
+    margin-left: 420px;
     width: 800px;
-    height: 720px;
+    height: 550px;
     background-color: #c8e5e4;
     color: #000;
     border-radius: 12px;
     box-shadow: 12px 12px 38px 0px rgba(0,0,0,0.3);
   }
 
+  button {
+    
+    /* height: 200px */
+    /* border: 3px soli÷d green;  */
+  }
+h1{
+  font-weight: bold;
+}
+
+input{
+  font-size: medium;
+}
 
 button {
     background-color: #20a8a4;;
@@ -25,6 +39,7 @@ button {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-left: 330px;
   }
 
   button:hover {

@@ -1,6 +1,17 @@
-.aa{
-  float: right;
-  margin-top: 100px;
+.card_view{
+  float: left;
+  margin-left: 250px;
+  /* margin-top: 110px; */
+}
+.container {
+  margin-top: 90px;
+  margin-left: 420px;
+  width: 800px;
+  height: 50vh;
+  background-color: #c8e5e4;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 12px 12px 38px 0px rgba(0,0,0,0.3);
 }
 
 

@@ -2,11 +2,12 @@
 
 
 .container-table {
-    margin-top: 80px;
+    margin-top: 75px;
     margin-left: 150px;
+    /* margin-bottom: 200px; */
     /* background-color: #000; */
     width: 100%;
-    height: 100vh;
+    height: 78vh;
     /* display:flex; */
     /* align-items: center; */
     /* justify-content:center; */
@@ -14,6 +15,13 @@
     float: right;
 
 }
+th{
+    background: white;
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
 .btn{
     
     padding:10px 60px ;
@@ -92,6 +100,7 @@
 table{
     float: right;
     margin-right: 14px;
+    
 }
  table, th, td {
     border: 0px solid black;
@@ -164,3 +173,6 @@ height: 2rem;
 float: left;
 text-align: left;
 }
+input{
+    font-size: medium;
+  }
